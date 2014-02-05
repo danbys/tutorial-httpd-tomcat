@@ -7,7 +7,7 @@ Follow this tutorial to install and configure Apache HTTPd to take advantage som
 ## Install HTTPd
 
 Uncompress files
-```
+```bat
 C:\apache-httpd-tomcat>scripts\uncompess.bat
 Uncompressing:
 httpd-2.4.7-win64
@@ -15,7 +15,7 @@ mod_jk-1.2.37-win64
 ```
 
 Move HTTPd to install directory
-```
+```bat
 C:\apache-httpd-tomcat>move downloads\httpd-2.4.7-win64\Apache24 "\Program Files\Apache Software Foundation\HTTPd 2.4.7"
      1 dir(s) moved.
 ```
