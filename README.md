@@ -152,10 +152,24 @@ The benefit of implementing a defualt installation is rather small. What you pro
 
 Need redundance or better load handeling?
 
-### SSL
+[byrequests](http://httpd.apache.org/docs/current/mod/mod_lbmethod_byrequests.html): distribute the requests among the various workers to ensure that each gets their configured share of the number of requests.
 
-Encrypt http traffic to protect sesetive information.
+[bybusyness](http://httpd.apache.org/docs/current/mod/mod_lbmethod_bybusyness.html): keeps track of how many requests each worker is currently assigned at present. A new request is automatically assigned to the worker with the lowest number of active requests.
+
+[bytraffic](http://httpd.apache.org/docs/current/mod/mod_lbmethod_bytraffic.html): similar to the Request Counting method
+
+[heartbeat](http://httpd.apache.org/docs/current/mod/mod_lbmethod_heartbeat.html): favors servers with more ready (idle) capacity over time, but does not select the server with the most ready capacity every time.
+
+TODO: write tutorial
+
+### HTTPS
+
+Encrypt traffic with Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols to protect sensitive information.
+
+TODO: write tutorial
 
 ### Virtual Hosts
 
 Use custom hostnames, prittify urls to simplify for the user. Serve static files more efficiantly.
+
+TODO: write tutorial
